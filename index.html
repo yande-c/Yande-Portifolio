@@ -20,15 +20,6 @@
       border-bottom: 2px solid #a72ecc;
     }
 
-    header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #cf28cf;
-      margin-bottom: 10px;
-    }
-
     h1 {
       margin: 10px 0 5px;
       color: #000000;
@@ -62,19 +53,6 @@
       padding-left: 20px;
     }
 
-    button.download-btn {
-      padding: 10px 15px;
-      background-color: #ae276a;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      cursor: pointer;
-    }
-
-    button.download-btn:hover {
-      background-color: #912182;
-    }
-
     form input, form textarea, form button {
       width: 100%;
       padding: 10px;
@@ -96,20 +74,39 @@
       margin-top: 30px;
       font-size: 0.9em;
     }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #ae276a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="profile.jpg" alt="Yande Kangwa Nsofwa Photo" />
     <h1>Yande Kangwa Nsofwa</h1>
     <p>Information Systems Student | Water Advocate | Content Creator</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+      <a href="https://www.linkedin.com/in/yande-nsofwa-b01797301" target="_blank">LinkedIn</a>
+    </div>
   </header>
 
   <div class="dropdown">
     <div class="dropdown-header" onclick="toggleDropdown('about')">About Me</div>
     <div class="dropdown-content" id="about">
-      <p>I am a third-year student at The Copperbelt University studying Information Systems. I'm passionate about digital innovation, water sustainability, environmental awareness, and policy. I'm a volunteer at Copper Rose Zambia and have interned with Eastern Water and Sanitation Company.</p>
+      <p><strong>Objective:</strong><br>
+      I am a motivated third-year Information Systems student at The Copperbelt University, with hands-on experience in community work, programming, social media, content creation, and IT support. I'm seeking to apply these skills to roles that support IT, community engagement, and digital outreach.</p>
+      <p><strong>Education:</strong><br>
+      Bachelor of Science in Information Systems<br>
+      Copperbelt University, Kitwe – Expected Graduation: 2027</p>
     </div>
   </div>
 
@@ -119,20 +116,51 @@
       <ul>
         <li><strong>Water Friday:</strong> Weekly water education initiative.</li>
         <li><strong>#DrinkDon'tDrop:</strong> Hydration and anti-plastic campaign.</li>
-        <li><strong>Delegate for PANAFCON Water Conference 2025</li>
+        <li><strong>Delegate for PANAFCON Water Conference 2025</strong></li>
         <li><strong>Model UN Delegate:</strong> Represented Somalia in discussions on SDGs in Africa.</li>
         <li><strong>World Lake Conference Film:</strong> Kafue River conservation short film.</li>
+        <li><strong>My Water Footprint Campaign:</strong> Promoting water conservation and plastic pollution awareness.</li>
       </ul>
     </div>
   </div>
 
   <div class="dropdown">
-    <div class="dropdown-header" onclick="toggleDropdown('cv')">Downloadable CV</div>
-    <div class="dropdown-content" id="cv">
-      <p>You can download my CV using the button below:</p>
-      <a href="c:\Users\USER\Downloads\Yande Kangwa Nsofwa Resume word.pdf" download>
-        <button class="download-btn">Download CV</button>
-      </a>
+    <div class="dropdown-header" onclick="toggleDropdown('experience')">Experience</div>
+    <div class="dropdown-content" id="experience">
+      <p><strong>COPPER ROSE ZAMBIA</strong><br>
+      Campus Fellow & Social Media Content Creator (Mar 2024 – Sep 2024)<br>
+      - Led HIV/AIDS awareness campaigns.<br>
+      - Distributed HIV self-test kits and condoms.<br>
+      - Created social media content to engage the community.</p>
+
+      <p><strong>EASTERN WATER & SANITATION COMPANY LTD</strong><br>
+      Industrial Attachment (Sep 2024 – Nov 2024)<br>
+      - Supported water management and sanitation initiatives.<br>
+      - Helped with server updates, end-user support, and networking.</p>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <div class="dropdown-header" onclick="toggleDropdown('skills')">Skills & Certificates</div>
+    <div class="dropdown-content" id="skills">
+      <p><strong>Technical Skills:</strong> Java, JavaScript, HTML, Web Design, Networking, Databases</p>
+      <p><strong>Soft Skills:</strong> Leadership, Communication, Project Management, Team Collaboration</p>
+      <p><strong>Certificates:</strong><br>
+      ✓ Agricultural TEVETA Certificate<br>
+      ✓ Project Management Certificate<br>
+      ✓ Community Organization (YALI)<br>
+      ✓ Global Youth Climate Summit<br>
+      ✓ Practical Stress Management<br>
+      ✓ Leadership Skills<br>
+      ✓ Emerge MUN Conference 2025</p>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <div class="dropdown-header" onclick="toggleDropdown('references')">References</div>
+    <div class="dropdown-content" id="references">
+      <p><strong>Miyoba Beenzu</strong><br>
+      Email: <a href="mailto:miyoba@copperrosezambia.org">miyoba@copperrosezambia.org</a></p>
     </div>
   </div>
 
