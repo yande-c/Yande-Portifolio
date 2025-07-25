@@ -169,34 +169,5 @@
   </div>
 
  
-<div class="dropdown">
-  <div class="dropdown-header" onclick="toggleDropdown('contact')">Contact Me</div>
-  <div class="dropdown-content" id="contact">
-    <form action="https://formsubmit.io/send/nsofwayande@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-
-      <!-- Hidden input to disable CAPTCHA -->
-      <input name="_formsubmit_id" type="text" style="display:none" />
-
-      <!-- Optional: redirect after submission (you can change this URL later) -->
-      <input type="hidden" name="_redirect" value="https://example.com/thank-you.html" />
-
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</div>
-
-<footer>
-  &copy; 2025 Yande Kangwa Nsofwa. All Rights Reserved. | #DrinkDon'tDrop 💧
-</footer>
-
-<script>
-  function toggleDropdown(id) {
-    const content = document.getElementById(id);
-    content.style.display = content.style.display === "block" ? "none" : "block";
-  }
-
 </body>
 </html>
